@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset ="utf-8" />
+  <title>signup</title>
+</head>
+  <body>
+    <form name ='join' method="GET" action="success.php">
+      <h1>Welcome to our site</h1>
+        <label>ID : <input type="text" name="userid" /></label>
+        <br>
+        <label>PW : <input type="password" name="userpw" /></label>
+        <br>
+        <label>PW again: <input type="password" name="userpw_a" /></label>
+        <br>
+        <label>email : <input type="text" name="useremail" /></label>
+        <br>
+        <label>name : <input type="text" name="username" /></label>
+        <br>
+        <label>gender : <input type="radio" name="usergender" value="male"/>남성
+        <input type="radio" name="usergender" value="female">여성</label>
+        <br>
+        <input type="submit" value="sign up" onclick = "location.href='success.php'"; />
+    </form>
+  </body>
+</html>
