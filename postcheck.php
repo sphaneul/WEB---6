@@ -12,18 +12,17 @@ if($name==NULL||$title==NULL||$content==NULL||$pw==NULL){
 }
 
 $con=mysqli_connect("localhost","root","kitty0809","webstudy") or die("mysql connect error");
-$query="select * from board";
-$result=mysqli_query($con,$query) or die("query error");
-$count=mysqli_num_rows($result);
-$upload=mysqli_query($con,"insert into board(title, content, date, hit, name, pwd)
-values('$title','$content','$date',0,'$name','$pw')");
+$upload=mysqli_query($con,"insert into board(num, title, content, id, pwd, date, hit)
+values(null,'$title','$content','$name','$pw','$date',0)");
+
 if($upload){
   echo "업로드에 성공하였습니다.";
   echo "<a href=list.php>글 목록으로</a>";
 }
-else {
+else{
   echo "업로드에 실패하였습니다.";
   echo "<a href=post.php>다시 글 작성하기</a>";
 }
 mysqli_close($con);
+
 ?>
