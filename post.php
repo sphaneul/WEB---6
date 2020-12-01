@@ -7,10 +7,10 @@
     <h2 align=center>POST 작성</h2>
     <form name ='write' method="POST" action="postcheck.php">
       <table align=center class = "table2">
-        <tr>
+
         <td align=center>작성자</td>
         <td><input type = text name = name size=20> </td>
-        </tr>
+
 
         <tr>
         <td align=center>제목</td>
