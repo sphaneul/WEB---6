@@ -34,4 +34,5 @@ if($signup){
   echo "회원이 되신 것을 환영합니다.";
   echo "<a href=login.php>로그인</a>";
 }
+mysqli_close($con);
 ?>
